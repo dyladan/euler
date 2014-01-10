@@ -16,3 +16,7 @@
 *.exe
 *.out
 *.app
+c
+
+#tests
+test.*
