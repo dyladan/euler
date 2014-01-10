@@ -4,7 +4,7 @@
 
 
 
-char* reverse_string(char *str){
+void reverse_string(char *str){
   char temp;
   size_t len = strlen(str) - 1;
   size_t i;
@@ -15,19 +15,16 @@ char* reverse_string(char *str){
     str[i] = temp;
     k--;
   }
-  return str;
 }
 
 int isPalindrome(int n){
   char str[10];
   char rev[10];
   sprintf(str, "%d", n);
-  rev = reverse_string(str);
-  if(strncmp(str, rev, 20)==0){
-  return 1;
-  } else {
-  return 0;
-  }
+  strcpy(rev, str);
+  fputs(str, stdout);
+  reverse_string(rev);
+  fputs(str, stdout);
 }
 /*
 int main(int argc, char *argv[]){
