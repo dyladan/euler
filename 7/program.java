@@ -1,7 +1,9 @@
-public static void int main(String[] args){
-  calcPrime(10001);
-}
-public void calcPrime(int inp) {
+import java.util.ArrayList;
+public class program{
+  public static void main(String[] args){
+    calcPrime(10001);
+  }
+  public static void calcPrime(int inp) {
     ArrayList<Integer> arr = new ArrayList<Integer>();
     arr.add(2);
     arr.add(3);
@@ -23,6 +25,6 @@ public void calcPrime(int inp) {
         counter++;
     }
 
-    System.out.println("finish" +arr.get(inp-1));
-    }
+    System.out.println(arr.get(inp-1));
+  }
 }
