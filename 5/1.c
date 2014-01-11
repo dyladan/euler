@@ -16,4 +16,5 @@ int main(int argc, char *argv[]){
   }
 
   printf("%d\n", n - 20);
+  return 0;
 }
