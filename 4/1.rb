@@ -1,6 +1,6 @@
 large = 0
-(100..999).each do |t|
-  (100..999).each do |v|
+(500..999).each do |t|
+  (t..999).each do |v|
     product = t*v
     str = product.to_s
     rev = product.to_s.reverse

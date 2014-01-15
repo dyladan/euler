@@ -5,8 +5,8 @@ import "fmt"
 
 func main() {
 	large := 0
-	for i := 100; i < 999; i++ {
-		for j := 100; j < 999; j++ {
+	for i := 500; i < 1000; i++ {
+		for j := i; j < 1000; j++ {
 			product := i * j
 			if isPalindrome(product) {
 				if product > large {
