@@ -1,5 +1,7 @@
 #include <stdio.h>
-#define ARRSIZE 1000000
+#define ARRSIZE 5000000
+int known[ARRSIZE];
+int value[ARRSIZE];
 
 int main(int argc, char *argv[]){
   unsigned long n;
@@ -7,9 +9,6 @@ int main(int argc, char *argv[]){
   int large = 0;
   int count;
   int best = 0;
-  int known[ARRSIZE];
-  int value[ARRSIZE];
-  printf("known is %lu bytes\n", sizeof(known));
   for(j = 0; j < ARRSIZE; j++){
     known[j] = 0;
     value[j] = 0;
