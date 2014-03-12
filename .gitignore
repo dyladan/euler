@@ -20,3 +20,10 @@ c
 
 #tests
 test.*
+
+#haskell
+*.hi
+
+#python
+__pycache__
+*.py[cod]
